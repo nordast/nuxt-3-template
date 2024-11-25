@@ -88,13 +88,13 @@ npx nuxi@latest module add fonts
 #### Icons [#](https://nuxt.com/modules/icon#setup-%EF%B8%8F)
 
 ```bash
-npx nuxi module add icon
+npx nuxi@latest module add icon
 ```
 
 #### SEO [#](https://nuxtseo.com/docs/nuxt-seo/getting-started/installation)
 
 ```bash
-npx nuxi module add @nuxtjs/seo
+npx nuxi@latest module add @nuxtjs/seo
 ```
 
 #### Third-Party Scripts [#](https://scripts.nuxt.com/docs/getting-started/installation)
@@ -113,4 +113,28 @@ npm install @formkit/auto-animate
 
 ```bash
 npm install @nuxtjs/cloudinary
+```
+
+###
+## 
+###
+
+
+#### Nuxt Auth Utils  [#](https://github.com/atinux/nuxt-auth-utils)
+
+```bash
+npx nuxi@latest module add auth-utils
+```
+Add a NUXT_SESSION_PASSWORD env variable with at least 32 characters in the .env.
+
+#### Prisma  [#](https://nuxt.com/modules/prisma#quick-setup)
+
+```bash
+npx nuxi@latest module add @prisma/nuxt
+```
+
+#### Stripe
+
+```bash
+npm install stripe
 ```
