@@ -27,29 +27,26 @@ npm run dev
 
 ```bash
 npx nuxi@latest init <project-name>
-
 ```
 
 #### Install Nuxt Color Mode:
 
 ```bash
 npx nuxi module add color-mode
-
 ```
 
 #### Shadcn Setup:
 
-[Shadcn-Vue Documentation](https://www.shadcn-vue.com/docs/installation/nuxt.html)
+[Documentation](https://www.shadcn-vue.com/docs/installation/nuxt.html)
 
 ```bash
-
 npm install -D typescript
 
 npx nuxi@latest module add @nuxtjs/tailwindcss
 
 npx nuxi@latest module add shadcn-nuxt
-
 ```
+
 Update the nuxt.config.ts as following:
 
  ```bash
@@ -60,7 +57,6 @@ export default defineNuxtConfig({
     componentDir: './components/ui'
   }
 })
-
 ```
 
 Run the CLI:
@@ -74,3 +70,11 @@ Let's run the following command to install first component:
 ```bash
 npx shadcn-vue@latest add button
  ```
+
+#### VueUse
+
+[Documentation](https://vueuse.org/guide/#nuxt)
+
+```bash
+npx nuxi@latest module add vueuse
+```
