@@ -1,75 +1,76 @@
-# Nuxt Minimal Starter
-
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
 ## Setup
 
-Make sure to install dependencies:
+Make sure to install the dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### Environment Variable Setup
 
-Start the development server on `http://localhost:3000`:
+Copy the variables from .env.example file and create new file called .env.
+
+### Development Server
+
+Start the development server on [http://localhost:3000](http://localhost:3000):
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
 
-Build the application for production:
+###
+## Self documentation:
+###
+
+#### Install Latest Nuxt Project:
 
 ```bash
-# npm
-npm run build
+npx nuxi@latest init <project-name>
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+#### Install Nuxt Color Mode:
 
 ```bash
-# npm
-npm run preview
+npx nuxi module add color-mode
 
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+#### Shadcn Setup:
+
+[Shadcn-Vue Documentation](https://www.shadcn-vue.com/docs/installation/nuxt.html)
+
+```bash
+
+npm install -D typescript
+
+npx nuxi@latest module add @nuxtjs/tailwindcss
+
+npx nuxi@latest module add shadcn-nuxt
+
+```
+Update the nuxt.config.ts as following:
+
+ ```bash
+export default defineNuxtConfig({
+  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  shadcn: {
+    prefix: '',
+    componentDir: './components/ui'
+  }
+})
+
+```
+
+Run the CLI:
+
+ ```bash
+npx shadcn-vue@latest init
+ ```
+
+Let's run the following command to install first component:
+
+```bash
+npx shadcn-vue@latest add button
+ ```
