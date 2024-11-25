@@ -108,3 +108,9 @@ npx nuxi@latest module add scripts
 ```bash
 npm install @formkit/auto-animate
 ```
+
+#### Nuxt Cloudinary  [#](https://cloudinary.nuxtjs.org/getting-started#installation)
+
+```bash
+npm install @nuxtjs/cloudinary
+```
