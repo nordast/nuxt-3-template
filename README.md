@@ -102,3 +102,11 @@ npx nuxi@latest module add fonts
 ```bash
 npx nuxi module add icon
 ```
+
+#### SEO
+
+[Documentation](https://nuxtseo.com/docs/nuxt-seo/getting-started/installation)
+
+```bash
+npx nuxi module add @nuxtjs/seo
+```
