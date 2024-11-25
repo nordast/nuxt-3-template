@@ -86,3 +86,19 @@ npx nuxi@latest module add vueuse
 ```bash
 npx nuxi module add eslint
 ```
+
+#### Fonts
+
+[Documentation](https://fonts.nuxt.com/get-started/installation#automatic-installation)
+
+```bash
+npx nuxi@latest module add fonts
+```
+
+#### Icons
+
+[Documentation](https://nuxt.com/modules/icon#setup-%EF%B8%8F)
+
+```bash
+npx nuxi module add icon
+```

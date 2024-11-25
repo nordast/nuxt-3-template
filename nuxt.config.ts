@@ -7,7 +7,9 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxt/icon'
   ],
   shadcn: {
     prefix: '',
