@@ -78,3 +78,11 @@ npx shadcn-vue@latest add button
 ```bash
 npx nuxi@latest module add vueuse
 ```
+
+#### ESLint
+
+[Documentation](https://eslint.nuxt.com/packages/module#quick-setup)
+
+```bash
+npx nuxi module add eslint
+```
