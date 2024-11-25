@@ -102,3 +102,9 @@ npx nuxi module add @nuxtjs/seo
 ```bash
 npx nuxi@latest module add scripts
 ```
+
+#### Auto-animate [#](https://nuxt.com/modules/auto-animate#installation)
+
+```bash
+npm install @formkit/auto-animate
+```
