@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/icon',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    '@nuxt/scripts'
   ],
   shadcn: {
     prefix: '',

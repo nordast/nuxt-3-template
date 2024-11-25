@@ -20,10 +20,10 @@ npm run dev
 
 
 ###
-## Self documentation:
+## Self installation
 ###
 
-#### Install Latest Nuxt Project:
+#### Install Latest Nuxt Project [#](https://nuxt.com/docs/getting-started/installation#new-project)
 
 ```bash
 npx nuxi@latest init <project-name>
@@ -35,9 +35,7 @@ npx nuxi@latest init <project-name>
 npx nuxi module add color-mode
 ```
 
-#### Shadcn Setup:
-
-[Documentation](https://www.shadcn-vue.com/docs/installation/nuxt.html)
+#### Shadcn Setup [#](https://www.shadcn-vue.com/docs/installation/nuxt.html)
 
 ```bash
 npm install -D typescript
@@ -59,54 +57,48 @@ export default defineNuxtConfig({
 })
 ```
 
-Run the CLI:
 
  ```bash
+#Run the CLI:
 npx shadcn-vue@latest init
- ```
 
-Let's run the following command to install first component:
-
-```bash
+#Install button component:
 npx shadcn-vue@latest add button
  ```
 
-#### VueUse
 
-[Documentation](https://vueuse.org/guide/#nuxt)
+#### VueUse [#](https://vueuse.org/guide/#nuxt)
 
 ```bash
 npx nuxi@latest module add vueuse
 ```
 
-#### ESLint
-
-[Documentation](https://eslint.nuxt.com/packages/module#quick-setup)
+#### ESLint [#](https://eslint.nuxt.com/packages/module#quick-setup)
 
 ```bash
 npx nuxi module add eslint
 ```
 
-#### Fonts
-
-[Documentation](https://fonts.nuxt.com/get-started/installation#automatic-installation)
+#### Fonts [#](https://fonts.nuxt.com/get-started/installation#automatic-installation)
 
 ```bash
 npx nuxi@latest module add fonts
 ```
 
-#### Icons
-
-[Documentation](https://nuxt.com/modules/icon#setup-%EF%B8%8F)
+#### Icons [#](https://nuxt.com/modules/icon#setup-%EF%B8%8F)
 
 ```bash
 npx nuxi module add icon
 ```
 
-#### SEO
-
-[Documentation](https://nuxtseo.com/docs/nuxt-seo/getting-started/installation)
+#### SEO [#](https://nuxtseo.com/docs/nuxt-seo/getting-started/installation)
 
 ```bash
 npx nuxi module add @nuxtjs/seo
+```
+
+#### Third-Party Scripts [#](https://scripts.nuxt.com/docs/getting-started/installation)
+
+```bash
+npx nuxi@latest module add scripts
 ```
