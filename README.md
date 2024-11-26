@@ -79,6 +79,18 @@ npx nuxi@latest module add vueuse
 npx nuxi module add eslint
 ```
 
+Add the below to lint commands to your package.json script section:
+```bash
+{
+    "scripts": {
+        ...
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        ...
+    },
+}
+```
+
 #### Fonts [#](https://fonts.nuxt.com/get-started/installation#automatic-installation)
 
 ```bash
