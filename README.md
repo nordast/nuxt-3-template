@@ -47,7 +47,7 @@ npx nuxi@latest module add shadcn-nuxt
 
 Update the nuxt.config.ts as following:
 
- ```bash
+ ```javascript
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
   shadcn: {
@@ -73,21 +73,30 @@ npx shadcn-vue@latest add button
 npx nuxi@latest module add vueuse
 ```
 
-#### ESLint [#](https://eslint.nuxt.com/packages/module#quick-setup)
+#### ESLint and Prettier [#](https://eslint.nuxt.com/packages/module#quick-setup)
 
 ```bash
 npx nuxi module add eslint
+npm i -D eslint prettier eslint-config-prettier eslint-plugin-prettier
+```
+
+Add to the eslint.config.mjs:
+```javascript
+import withNuxt from "./.nuxt/eslint.config.mjs";
+
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+
+export default withNuxt(eslintPluginPrettierRecommended);
 ```
 
 Add the below to lint commands to your package.json script section:
-```bash
+```json
 {
     "scripts": {
-        ...
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        ...
-    },
+        "format": "prettier --write \"{components,pages,plugins,middleware,layouts,composables,assets}/**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\""
+    }
 }
 ```
 
@@ -129,7 +138,7 @@ npm install @nuxtjs/cloudinary
 
 Update the nuxt.config.ts as following:
 
- ```bash
+ ```javascript
 export default defineNuxtConfig({
    modules: [
    "@nuxtjs/cloudinary"
