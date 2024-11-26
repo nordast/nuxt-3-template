@@ -115,6 +115,25 @@ npm install @formkit/auto-animate
 npm install @nuxtjs/cloudinary
 ```
 
+Update the nuxt.config.ts as following:
+
+ ```bash
+export default defineNuxtConfig({
+   modules: [
+   "@nuxtjs/cloudinary"
+   ],
+})
+```
+
+Add env variables in the .env.
+
+```
+NUXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
+NUXT_PUBLIC_UPLOAD_PRESET=
+NUXT_CLOUDINARY_API_KEY=""
+NUXT_CLOUDINARY_API_SECRET=""
+```
+
 ###
 ## 
 ###
@@ -126,6 +145,9 @@ npm install @nuxtjs/cloudinary
 npx nuxi@latest module add auth-utils
 ```
 Add a NUXT_SESSION_PASSWORD env variable with at least 32 characters in the .env.
+```
+NUXT_SESSION_PASSWORD=""
+```
 
 #### Prisma  [#](https://nuxt.com/modules/prisma#quick-setup)
 
