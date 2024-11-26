@@ -170,10 +170,17 @@ Add a NUXT_SESSION_PASSWORD env variable with at least 32 characters in the .env
 NUXT_SESSION_PASSWORD=""
 ```
 
-#### Prisma  [#](https://nuxt.com/modules/prisma#quick-setup)
+#### Prisma
 
 ```bash
-npx nuxi@latest module add @prisma/nuxt
+npm install -D prisma @prisma/client
+```
+
+Some prisma commands:
+```bash
+npx prisma init
+npx prisma generate
+npx prisma db push
 ```
 
 #### Stripe
